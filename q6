@@ -1,0 +1,19 @@
+//Fa ̧ca um programa que leia uma quantidade de horas, minutos e segundos e imprima o total de segundos.
+
+#include <stdio.h>
+
+int horas, mins, seg;
+
+int main(){
+
+printf("Digite a quantidade de horas desejada:\n");
+scanf("%d", &horas);
+printf("Digite a quantidade de minutos desejados:\n");
+scanf("%d", &mins);
+printf("Digite a quantidade de segundos desejados:\n");
+scanf("%d", &seg);
+
+printf("O total de segundos é igual a %d.", horas * 3600 + mins * 60 + seg);
+
+return 0;
+}
