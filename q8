@@ -1,0 +1,20 @@
+//Escreva um programa que leia um valor num ́erico inteiro e apresente como resultado os seus valores
+//sucessor e antecessor.
+
+#include <stdio.h>
+
+int x;
+int sucessor, antecessor;
+
+int main(){
+
+printf("Digite um número:\n");
+scanf("%d", &x);
+
+sucessor = x+1;
+antecessor = x-1;
+
+printf("O sucessor de %d é igual a %d, o antecessor é igual a %d", x, sucessor, antecessor);
+
+return 0;
+}
