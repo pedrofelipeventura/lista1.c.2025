@@ -1,0 +1,25 @@
+/*
+Escreva um programa que pe ̧ca ao usu ́ario para digitar dois n ́umeros, obtenha-os do usu ́ario e imprima
+a soma, o produto, a diferen ̧ca, o quociente e o resto da divis ̃ao dos dois n ́umeros.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    int num1, num2, diferenca, quociente, resto;
+
+    printf("Digite o num1:\n");
+    scanf("%d", &num1);
+    printf("Digite o num2:\n");
+    scanf("%d", &num2);
+    
+    diferenca = abs(num1 - num2);
+    quociente = num1/num2;
+    resto = num1 % num2;
+
+    printf("Soma dos dois números: %d, produto: %d, diferença: %d, quociente: %d, resto: %d\n ",
+    num1+num2, num1*num2 , diferenca, quociente, resto );
+
+    return 0;
+}
