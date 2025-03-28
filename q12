@@ -1,0 +1,25 @@
+/*
+Escreva um programa que leia duas vari ́aveis A e B e efetue a troca dos valores. O objetivo  ́e que a
+vari ́avel A passe a conter o valor de B e a vari ́avel B passe a possuir o valor de A. Apresente os valores
+ap ́os a efetiva ̧c ̃ao do processamento da troca.
+*/
+
+#include <stdio.h>
+
+int main(){
+
+    int a, b , c;
+
+    printf("Digite o valor de a:\n");
+    scanf("%d", &a);
+    printf("Digite o valor de b:\n");
+    scanf("%d", &b);
+
+    c = a;
+    a = b;
+    b = c;
+
+    printf("Novo valor de a: %d, novo valor de b: %d", a, b);
+    
+    return 0;
+}
