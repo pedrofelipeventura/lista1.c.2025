@@ -1,0 +1,24 @@
+/*
+Escreva um programa que calcule e apresente o valor do volume de um caixa retangular utilizando a
+f ́ormula VOLUME = COMPRIMENTO * LARGURA * ALTURA.
+*/
+
+#include <stdio.h>
+
+float volume, altura, largura, comprimento;
+
+int main(){
+
+    printf("Digite o comprimento da caixa:\n");
+    scanf("%f",&comprimento );
+    printf("Digite a altura da caixa:\n");
+    scanf("%f",&altura );
+    printf("Digite o comprimento da caixa:\n");
+    scanf("%f",&largura );
+    
+    volume = (altura * largura) * comprimento;
+
+    printf("O seu volume é igual a %.2f metros/n", volume);
+
+    return 0;
+}
