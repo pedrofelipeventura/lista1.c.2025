@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    // Leitura dos dois inteiros
+    scanf("%d %d", &a, &b);
+
+    // imprimindo o resultado sem usar 'if', '&&' ou '||'
+    printf("%d %s múltiplo de %d\n", a, (a % b == 0) ? "é" : "não é", b);
+
+    return 0;
+}
