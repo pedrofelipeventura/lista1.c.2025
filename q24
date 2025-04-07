@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int segundos, horas, minutos, segundos_restantes;
+
+    // Leitura do tempo em segundos
+    printf("Digite o tempo em segundos: ");
+    scanf("%d", &segundos);
+
+    // Calculando horas, minutos e segundos
+    horas = segundos / 3600;                // Divisão para obter as horas
+    minutos = (segundos % 3600) / 60;        // Resto da divisão por 3600, dividido por 60 para obter minutos
+    segundos_restantes = segundos % 60;     // Resto da divisão por 60, para obter os segundos restantes
+
+    // Imprimindo o resultado
+    printf("%d segundos equivalem a %d horas, %d minutos e %d segundos.\n", segundos, horas, minutos, segundos_restantes);
+
+    return 0;
+}
